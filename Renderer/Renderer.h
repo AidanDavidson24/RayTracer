@@ -2,6 +2,8 @@
 #include "Canvas.h"
 #include "../Math/Ray.h"
 #include "../Object/Object.h"
+#include "../Object/Scene.h"
+#include "Camera.h"
 #include <SDL.h>
 
 class Renderer
@@ -11,10 +13,9 @@ public:
 
 	bool Initialize();
 	void Shutdown();
-
-	void Render(Canvas& canvas, Object* object);
-
 	bool CreateWindow(int width, int height);
+	
+	void Render(Canvas& canvas, Scene& scene, Camera& camera);
 
 	void CopyCanvas(const Canvas& canvas);
 	void Present();

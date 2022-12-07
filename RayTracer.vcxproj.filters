@@ -36,6 +36,15 @@
     <ClCompile Include="Object\Sphere.cpp">
       <Filter>Object</Filter>
     </ClCompile>
+    <ClCompile Include="Renderer\Material.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Scene.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Camera.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Renderer\Canvas.h">
@@ -60,6 +69,12 @@
       <Filter>Object</Filter>
     </ClInclude>
     <ClInclude Include="Renderer\Material.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Scene.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Camera.h">
       <Filter>Renderer</Filter>
     </ClInclude>
   </ItemGroup>
