@@ -12,7 +12,7 @@ int main(int, char**)
 {
 	const int width = 800;
 	const int height = 600;
-	const int samples = 50;
+	const int samples = 25;
 	const float fov = 30.0f;
 
 	Renderer renderer;
@@ -68,7 +68,7 @@ void InitScene01(Scene& scene)
 
 }
 void InitScene02(Scene& scene)
-	{
+{
 	scene.AddObject(std::make_unique<Sphere>(glm::vec3{ 0, 1, 0 }, 1.0f, std::make_unique<Dielectric>(color3{ 1.0f, 1.0f, 1.0f }, 1.5f)));
 	scene.AddObject(std::make_unique<Sphere>(glm::vec3{ -4, 1, 0 }, 1.0f, std::make_unique<Lambertian>(color3{ 0.4f, 0.2f, 0.1f })));
 	scene.AddObject(std::make_unique<Sphere>(glm::vec3{ 4, 1, 0 }, 1.0f, std::make_unique<Metal>(color3{ 0.7f, 0.6f, 0.5f }, 0.0f)));
@@ -107,4 +107,4 @@ void InitScene02(Scene& scene)
 			}
 		}
 	}
-	}
+}
